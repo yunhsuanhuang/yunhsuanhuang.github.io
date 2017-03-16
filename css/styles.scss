@@ -1,0 +1,224 @@
+
+/* ----------------------------Variables-------------------------*/
+$gradient: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+
+$white: #ffffff;
+$pink: #fa709a;
+$yellow: #fee140;
+$grey: #7c7c7c;
+$dark_grey: #474747;
+
+/* --------------------------Global Styles-----------------------*/
+*{
+	box-sizing: border-box;
+}
+
+
+.wrapper {
+	width: 1440px;
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+.cf:before, .cf:after{
+	content:"";
+	display: table;
+}
+.cf:after{
+	clear: both;
+}
+
+.marker{
+	text-align: center;
+	border-top: 5px solid $pink;
+}
+.button_wrapper{
+		text-align: center;
+		margin: 2rem;
+
+	}
+
+.button{
+	    font-size: 1rem;
+	    font-weight: 400;
+	    letter-spacing: 1.25px;
+	    padding: 1rem 2rem;
+	    text-decoration: none;
+	    color: $white;
+	    background-color: $yellow;
+	    border-radius: 50px;
+	    -moz-border-radius: 50px;
+	    -webkit-border-radius: 50px;
+
+	    -webkit-transition: all .25s; /* For Safari 3.1 to 6.0 */
+    	transition: all .25s;
+    	&:hover {
+			color: $pink;
+		}
+	}
+
+/* --------------------------Banner Styles-----------------------*/
+
+header{
+	/*font-family: Roboto;*/
+	background: $gradient;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	li{
+		margin: 1.25rem 2rem;
+		float: right;
+		list-style-type: none;
+
+	}
+	a{
+		text-decoration: none;
+		color: $white;
+		font-weight: 400;
+		font-size: .85rem;
+		letter-spacing: 1px;
+		-webkit-transition: all .25s; /* For Safari 3.1 to 6.0 */
+    	transition: all .25s;
+    	&:hover {
+			color: $grey;
+		}
+	}
+	
+}
+
+#banner{
+	.logo{
+		text-align: center;
+		margin: 5rem 0 4rem 0;
+	}
+	img{
+		width: 600px;
+		height: auto;
+	}
+	
+	h2{
+		z-index: 100;
+		text-align: center;
+		color: $dark_grey;
+		font-weight: 300;
+		font-size: .95rem;
+		letter-spacing: 1px;
+	}
+}
+
+/* --------------------------Work Styles-----------------------*/
+
+#work{
+	.title{
+		color: black;
+		font-size: .95rem;
+		text-align: center;
+		text-decoration: none;
+		&:hover {
+			color: $grey;
+			 }
+	}
+	hr{
+		width: 60px;
+	}
+
+	.work{
+		width: 20%;
+		float: left;
+		margin: 2rem 6.6%;
+	}
+	p{
+		font-weight: 300;
+		font-size: .65rem;
+		color: $grey;
+	}
+	img{
+		/*height: 500px;
+		width: 200px;*/
+	}
+
+
+}
+
+
+/* --------------------------Instagram Styles-----------------------*/
+
+
+#instagram{
+
+	a.title{
+		color: black;
+		font-size: .95rem;
+		text-align: center;
+		text-decoration: none;
+		&:hover {
+			color: $grey;
+			 }
+	}
+	hr{
+		width: 347px;
+	}
+
+	.instagram_wrapper{
+		margin: 1rem 0;
+	}
+
+	.insta{
+		width: 15%;
+		float: left;
+		margin: 2.5%;
+	}
+
+}
+
+/* --------------------------Footer Styles-----------------------*/
+
+#footer{
+	background-color: $dark_grey;
+	margin: 3rem 0 0 0;
+	.social{
+		
+		padding: 44px 0;
+		font-size: 16px;
+	}
+	li{
+		float: left;
+		margin: 2rem .75rem ;
+		list-style-type: none;
+	}
+	a{
+		color: $white;
+		font-size: 1rem;
+		text-decoration:none;
+		-webkit-transition: all .25s; /* For Safari 3.1 to 6.0 */
+    	transition: all .25s;
+    	&:hover {
+			color: $grey;
+		}
+
+	}
+
+	.copyright{
+		color: $white;
+		text-align: center;
+		margin: 2rem 1rem ;
+		font-weight: 200;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
