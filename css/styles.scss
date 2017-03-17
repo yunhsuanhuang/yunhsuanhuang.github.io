@@ -53,14 +53,14 @@ $dark_grey: #474747;
 	    -webkit-transition: all .25s; /* For Safari 3.1 to 6.0 */
     	transition: all .25s;
     	&:hover {
-			color: $pink;
+			color: $grey;
 		}
 	}
 
 /* --------------------------Banner Styles-----------------------*/
 
 header{
-	/*font-family: Roboto;*/
+	font-family: Roboto;
 	background: $gradient;
 	width: 100%;
 	margin: 0;
@@ -118,7 +118,7 @@ header{
 			color: $grey;
 			 }
 	}
-	hr{
+	hr.marker{
 		width: 60px;
 	}
 
@@ -132,9 +132,11 @@ header{
 		font-size: .65rem;
 		color: $grey;
 	}
-	img{
-		/*height: 500px;
-		width: 200px;*/
+	h4{
+		color: black;
+		&:hover {
+			color: $grey;
+		}
 	}
 
 
@@ -155,7 +157,7 @@ header{
 			color: $grey;
 			 }
 	}
-	hr{
+	hr.marker{
 		width: 347px;
 	}
 
@@ -176,14 +178,14 @@ header{
 #footer{
 	background-color: $dark_grey;
 	margin: 3rem 0 0 0;
+	padding: 2rem 0;
 	.social{
-		
 		padding: 44px 0;
 		font-size: 16px;
 	}
 	li{
 		float: left;
-		margin: 2rem .75rem ;
+		margin: 0 .75rem ;
 		list-style-type: none;
 	}
 	a{
@@ -199,10 +201,11 @@ header{
 	}
 
 	.copyright{
-		color: $white;
+		width: 100%;
+		color: $grey;
 		text-align: center;
-		margin: 2rem 1rem ;
 		font-weight: 200;
+	
 	}
 
 }
