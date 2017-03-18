@@ -41,17 +41,21 @@
 
 
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		
-		<article>
-		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-					
-		<?php the_excerpt(); ?>
+		<?php if ( have_posts() ) : ?>
+	<?php while ( have_posts() ) : the_post(); ?>
+	
+	<article>
+	<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+				
+		<?php the_content(); ?>
 		</article>
-	    <p><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"class="button">Read More</a></p>
+
+        <p><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"class="button">Read More</a></p>
 		
-	<?php endwhile; else : ?>
-		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+	<?php endwhile; ?>
+	<?php else: ?>
+		<h1>Can't Find Post</h1>
+		<p>Sorry, we were unable to find the page you requested.</p>
 	<?php endif; ?>
 
 		
@@ -59,10 +63,10 @@
 
 
 
-<!-- 
+
 		<div class="button_wrapper">
 			<a href="#" class="button"> See all projects </a>
-		</div> -->
+		</div>
 
 		<br> <hr>
 
